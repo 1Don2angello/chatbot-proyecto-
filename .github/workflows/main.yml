@@ -15,8 +15,9 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-      - name: Install Dependencies
-        run: composer install
+      # Elimina o comenta la siguiente sección si no necesitas Composer
+      # - name: Install Dependencies
+      #   run: composer install
       - name: Run Tests
         run: phpunit tests
 
